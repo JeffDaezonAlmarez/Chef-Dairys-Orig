@@ -43,7 +43,6 @@ fetch(api)
       const label5 = document.createElement('LABEL');
       label5.classList.add('fas');
       label5.classList.add('fa-star');
-      label5.classList.add('star5');
 
       const star4 = document.createElement('input');
       star4.setAttribute('type', 'radio');
