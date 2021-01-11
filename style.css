@@ -1087,3 +1087,67 @@ form {
   border: none;
   border-radius: 20px;
 }
+
+.dessertmain {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dessertmain h1 {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #e29104;
+  font-size: 40pt;
+}
+
+.dessertpick {
+  height: 90%;
+  width: 100%;
+  padding: 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.dessertbox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background-color: rgba(116, 0, 0, 0.603);
+}
+
+.dessertbox:hover {
+  background-color: rgb(134, 48, 48);
+}
+
+.dessertbox h1 {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 20pt;
+  color: #00bdf8;
+}
+
+.dessertbox img {
+  height: 60%;
+  width: 80%;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+}
