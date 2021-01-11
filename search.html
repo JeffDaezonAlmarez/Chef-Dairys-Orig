@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recommended</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Search</title>
+    <link rel="stylesheet" href="./style.css"></link>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -40,16 +40,19 @@
       </nav>
     </header>
 
-    <div class="recommendedmain">
-      <h1>recommended</h1>
+    <form action="" class="searchform">
+        <input type="search" class="searchtext" name="search" placeholder="Search" id="search">
+        <input type="Submit" class="submitsearch" name="submitSearch" id="submitSearch">
+    </form>
 
-      <div class="recommendedpick">
-        <div class="recommendedbox">
-          <h1>Pandan Wrapped Roast Pork</h1>
-          <img src="./img/porkRecipe.jpg" alt="" />
-          <button class="btn-ingridients" id="myBtn">Ingredients</button>
+    <div class="searchmain">
+        <div id="searchpick" class="searchpick">
+          <div class="searchbox">
+                  <h1>Roast Sirloin Of Beef</h1>
+                  <img src="./img/beefRecipe.jpg" alt="">
+                  <button class="btn-ingridients" id="myBtn">Ingredients</button>
+              </div>
         </div>
       </div>
-    </div>
   </body>
 </html>
