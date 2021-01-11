@@ -1,5 +1,5 @@
 const api =
-  'https://api.edamam.com/search?q=chicken&app_id=5d4c78dd&app_key=a22eff998c59bb561936f410722f1fa8';
+  'https://api.edamam.com/search?q=dessert&app_id=5d4c78dd&app_key=a22eff998c59bb561936f410722f1fa8';
 
 fetch(api)
   .then((resp) => resp.json())
