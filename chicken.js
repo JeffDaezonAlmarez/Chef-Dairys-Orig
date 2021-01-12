@@ -31,46 +31,6 @@ fetch(api3)
       ingredientTitle.innerHTML = data.hits[i].recipe.label;
       const ingreImage = document.createElement('img');
       ingreImage.src = data.hits[i].recipe.image;
-      const rateme = document.createElement('h4');
-      rateme.classList.add('rateme');
-      rateme.innerHTML = 'Rate Me :)';
-      const starwidget = document.createElement('div');
-      starwidget.classList.add('starwidget');
-
-      const star5 = document.createElement('input');
-      star5.setAttribute('type', 'radio');
-      star5.classList.add('star5');
-      const label5 = document.createElement('LABEL');
-      label5.classList.add('fas');
-      label5.classList.add('fa-star');
-
-      const star4 = document.createElement('input');
-      star4.setAttribute('type', 'radio');
-      star4.classList.add('star4');
-      const label4 = document.createElement('LABEL');
-      label4.classList.add('fas');
-      label4.classList.add('fa-star');
-
-      const star3 = document.createElement('input');
-      star3.setAttribute('type', 'radio');
-      star3.classList.add('star3');
-      const label3 = document.createElement('LABEL');
-      label3.classList.add('fas');
-      label3.classList.add('fa-star');
-
-      const star2 = document.createElement('input');
-      star2.setAttribute('type', 'radio');
-      star2.classList.add('star2');
-      const label2 = document.createElement('LABEL');
-      label2.classList.add('fas');
-      label2.classList.add('fa-star');
-
-      const star1 = document.createElement('input');
-      star1.setAttribute('type', 'radio');
-      star1.classList.add('star1');
-      const label1 = document.createElement('LABEL');
-      label1.classList.add('fas');
-      label1.classList.add('fa-star');
 
       const ingredienthero2 = document.createElement('div');
       ingredienthero2.classList.add('ingredienthero2');
@@ -102,18 +62,6 @@ fetch(api3)
       ingredienthero2.appendChild(unL);
       ingredienthero1.appendChild(ingredientTitle);
       ingredienthero1.appendChild(ingreImage);
-      ingredienthero1.appendChild(rateme);
-      ingredienthero1.appendChild(starwidget);
-      starwidget.appendChild(star5);
-      starwidget.appendChild(label5);
-      starwidget.appendChild(star4);
-      starwidget.appendChild(label4);
-      starwidget.appendChild(star3);
-      starwidget.appendChild(label3);
-      starwidget.appendChild(star2);
-      starwidget.appendChild(label2);
-      starwidget.appendChild(star1);
-      starwidget.appendChild(label1);
 
       chickenbox.appendChild(recipetitle);
       chickenbox.appendChild(image);
@@ -156,46 +104,6 @@ fetch(api)
       ingredientTitle.innerHTML = data.hits[i].recipe.label;
       const ingreImage = document.createElement('img');
       ingreImage.src = data.hits[i].recipe.image;
-      const rateme = document.createElement('h4');
-      rateme.classList.add('rateme');
-      rateme.innerHTML = 'Rate Me :)';
-      const starwidget = document.createElement('div');
-      starwidget.classList.add('starwidget');
-
-      const star5 = document.createElement('input');
-      star5.setAttribute('type', 'radio');
-      star5.classList.add('star5');
-      const label5 = document.createElement('LABEL');
-      label5.classList.add('fas');
-      label5.classList.add('fa-star');
-
-      const star4 = document.createElement('input');
-      star4.setAttribute('type', 'radio');
-      star4.classList.add('star4');
-      const label4 = document.createElement('LABEL');
-      label4.classList.add('fas');
-      label4.classList.add('fa-star');
-
-      const star3 = document.createElement('input');
-      star3.setAttribute('type', 'radio');
-      star3.classList.add('star3');
-      const label3 = document.createElement('LABEL');
-      label3.classList.add('fas');
-      label3.classList.add('fa-star');
-
-      const star2 = document.createElement('input');
-      star2.setAttribute('type', 'radio');
-      star2.classList.add('star2');
-      const label2 = document.createElement('LABEL');
-      label2.classList.add('fas');
-      label2.classList.add('fa-star');
-
-      const star1 = document.createElement('input');
-      star1.setAttribute('type', 'radio');
-      star1.classList.add('star1');
-      const label1 = document.createElement('LABEL');
-      label1.classList.add('fas');
-      label1.classList.add('fa-star');
 
       const ingredienthero2 = document.createElement('div');
       ingredienthero2.classList.add('ingredienthero2');
@@ -227,18 +135,6 @@ fetch(api)
       ingredienthero2.appendChild(unL);
       ingredienthero1.appendChild(ingredientTitle);
       ingredienthero1.appendChild(ingreImage);
-      ingredienthero1.appendChild(rateme);
-      ingredienthero1.appendChild(starwidget);
-      starwidget.appendChild(star5);
-      starwidget.appendChild(label5);
-      starwidget.appendChild(star4);
-      starwidget.appendChild(label4);
-      starwidget.appendChild(star3);
-      starwidget.appendChild(label3);
-      starwidget.appendChild(star2);
-      starwidget.appendChild(label2);
-      starwidget.appendChild(star1);
-      starwidget.appendChild(label1);
 
       chickenbox.appendChild(recipetitle);
       chickenbox.appendChild(image);
@@ -281,46 +177,6 @@ fetch(api2)
       ingredientTitle.innerHTML = data.hits[i].recipe.label;
       const ingreImage = document.createElement('img');
       ingreImage.src = data.hits[i].recipe.image;
-      const rateme = document.createElement('h4');
-      rateme.classList.add('rateme');
-      rateme.innerHTML = 'Rate Me :)';
-      const starwidget = document.createElement('div');
-      starwidget.classList.add('starwidget');
-
-      const star5 = document.createElement('input');
-      star5.setAttribute('type', 'radio');
-      star5.classList.add('star5');
-      const label5 = document.createElement('LABEL');
-      label5.classList.add('fas');
-      label5.classList.add('fa-star');
-
-      const star4 = document.createElement('input');
-      star4.setAttribute('type', 'radio');
-      star4.classList.add('star4');
-      const label4 = document.createElement('LABEL');
-      label4.classList.add('fas');
-      label4.classList.add('fa-star');
-
-      const star3 = document.createElement('input');
-      star3.setAttribute('type', 'radio');
-      star3.classList.add('star3');
-      const label3 = document.createElement('LABEL');
-      label3.classList.add('fas');
-      label3.classList.add('fa-star');
-
-      const star2 = document.createElement('input');
-      star2.setAttribute('type', 'radio');
-      star2.classList.add('star2');
-      const label2 = document.createElement('LABEL');
-      label2.classList.add('fas');
-      label2.classList.add('fa-star');
-
-      const star1 = document.createElement('input');
-      star1.setAttribute('type', 'radio');
-      star1.classList.add('star1');
-      const label1 = document.createElement('LABEL');
-      label1.classList.add('fas');
-      label1.classList.add('fa-star');
 
       const ingredienthero2 = document.createElement('div');
       ingredienthero2.classList.add('ingredienthero2');
@@ -352,18 +208,6 @@ fetch(api2)
       ingredienthero2.appendChild(unL);
       ingredienthero1.appendChild(ingredientTitle);
       ingredienthero1.appendChild(ingreImage);
-      ingredienthero1.appendChild(rateme);
-      ingredienthero1.appendChild(starwidget);
-      starwidget.appendChild(star5);
-      starwidget.appendChild(label5);
-      starwidget.appendChild(star4);
-      starwidget.appendChild(label4);
-      starwidget.appendChild(star3);
-      starwidget.appendChild(label3);
-      starwidget.appendChild(star2);
-      starwidget.appendChild(label2);
-      starwidget.appendChild(star1);
-      starwidget.appendChild(label1);
 
       chickenbox.appendChild(recipetitle);
       chickenbox.appendChild(image);

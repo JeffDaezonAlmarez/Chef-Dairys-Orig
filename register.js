@@ -1,6 +1,6 @@
 const addUser = async () => {
-  const fullName = '';
-  const Address = '';
+  const fullName = 'Jeff Almarez';
+  const Address = 'solid west vigan city';
   const Age = '';
   const phoneNumber = '';
   const Email = '';
@@ -10,7 +10,7 @@ const addUser = async () => {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
-      authToken: 'token',
+      authToken: 'usertoken',
       responseType: 'json',
     },
     body: JSON.stringify({
@@ -36,3 +36,7 @@ const addUser = async () => {
 
 //Call Create Function
 addUser();
+
+document
+  .getElementById('submitRegistration')
+  .addEventListener('click', addUser);
