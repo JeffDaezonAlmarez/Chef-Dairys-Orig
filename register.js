@@ -1,25 +1,24 @@
-const addUser = async () => {
-  const fullName = 'Jeff Almarez';
-  const Address = 'solid west vigan city';
-  const Age = '';
-  const phoneNumber = '';
-  const Email = '';
-  const Password = '';
+const createUser = async () => {
+  const fullName = document.getElementById('fullname');
+  const Address = document.getElementById('address');
+  const Age = document.getElementById('age');
+  const phoneNumber = document.getElementById('number');
+  const Email = document.getElementById('emailRegistration');
+  const Password = document.getElementById('passwordRegistration');
   const options = {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
-      authToken: 'usertoken',
       responseType: 'json',
     },
     body: JSON.stringify({
-      fullName: fullName,
-      Address: Address,
-      Age: Age,
-      phoneNumber: phoneNumber,
-      Email: Email,
-      Password: Password,
+      fullName: fullName.value,
+      Address: Address.value,
+      Age: Age.value,
+      phoneNumber: phoneNumber.value,
+      Email: Email.value,
+      Password: Password.value,
     }),
   };
   const response = await fetch(
@@ -27,16 +26,11 @@ const addUser = async () => {
     options
   );
   const resData = await response.json();
-  if (response.status === 200) {
-    //Successful Codes
-  } else {
-    //error Codes
-  }
+  console.log(resData);
 };
 
-//Call Create Function
-addUser();
-
-document
-  .getElementById('submitRegistration')
-  .addEventListener('click', addUser);
+const registerForm = document.getElementById('registraionform');
+registerForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  createUser();
+});
