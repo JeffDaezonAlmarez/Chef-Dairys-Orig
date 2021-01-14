@@ -15,12 +15,13 @@
         </button>
         <h1>Good Day! Register first then proceed Thank You!</h1>
 
-        <form id="registraionform" action="">
+        <form id="registrationform" action="">
           <label class="signupLABEL">Sign Up:</label>
           <input
             class="text"
             type="text"
-            placeholder="Full Name"
+            
+            placeholder="Name ex.(Jane Doe)"
             name="fullname"
             id="fullname"
             required
@@ -40,6 +41,7 @@
             name="age"
             id="age"
             required
+            min =10
           />
           <input
             class="text"
@@ -59,10 +61,11 @@
           <input
             class="text"
             type="password"
-            placeholder="Password"
+            placeholder="Password example (Password123)"
             name="passwordRegistration"
             id="passwordRegistration"
             required
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           />
           <input
             class="submit"

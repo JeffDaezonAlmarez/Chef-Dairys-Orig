@@ -1,6 +1,7 @@
 const createUser = async () => {
   const Email = document.getElementById('emailLogIn');
   const Password = document.getElementById('passwordLogIn');
+
   const options = {
     method: 'POST',
     headers: {
@@ -11,15 +12,19 @@ const createUser = async () => {
     body: JSON.stringify({
       Email: Email.value,
       Password: Password.value,
-    }),
-  };
+    })
+  }
   const response = await fetch('http://localhost:8080/api/user/login', options);
   const resData = await response.json();
-  if (response.status) console.log(resData);
-};
-
+  console.log(resData);
+  if (response.status===200) {
+    window.location.replace('./home.html')
+    alert(resData.message);
+  }
+  else alert(resData.message)
+}
 const registerForm = document.getElementById('loginform');
 registerForm.addEventListener('submit', (event) => {
   event.preventDefault();
   createUser();
-});
+})

@@ -1225,3 +1225,118 @@ form {
   height: 100%;
   width: 40%;
 }
+
+.addRecipeBTN {
+  height: 5%;
+  width: 10%;
+  background-color: #ffa200;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #464646;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.addRecipeBTN a{
+  height: 100%;
+  width: 100%;
+  background-color: #ffa200;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #464646;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.addRecipeBTN:hover {
+  background-color: #e29104;
+  color: white;
+}
+
+.addRecipeBTN a:hover {
+  background-color: #e29104;
+  color: white;
+}
+
+/*new*/
+.addSharedmain{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addSharedmain h1 {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #e29104;
+  font-size: 40pt;
+}
+
+.sharepick {
+  height: 90%;
+  width: 100%;
+  padding: 0px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.sharebox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background-color: rgba(116, 0, 0, 0.603);
+}
+
+.sharebox:hover {
+  background-color: rgb(134, 48, 48);
+}
+
+.sharebox h1 {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 20pt;
+  color: #00bdf8;
+}
+
+.sharebox img {
+  height: 40%;
+  width: 40%;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+.sharebox h4 {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 20pt;
+  color: #e29104;
+}

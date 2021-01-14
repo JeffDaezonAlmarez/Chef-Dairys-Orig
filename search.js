@@ -72,7 +72,7 @@ fetch(api)
   });
 
 // const api2 =
-//   'https://api.edamam.com/search?q=veggie&app_id=5d4c78dd&app_key=a22eff998c59bb561936f410722f1fa8';
+// 'https://api.edamam.com/search?q=veggie&app_id=5d4c78dd&app_key=a22eff998c59bb561936f410722f1fa8';
 
 // fetch(api2)
 //   .then((resp) => resp.json())
