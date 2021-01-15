@@ -1,5 +1,5 @@
 const api =
-  'https://api.edamam.com/search?q=seafoods&app_id=5d4c78dd&app_key=a22eff998c59bb561936f410722f1fa8&to=100';
+  ' ';
 
 fetch(api)
   .then((resp) => resp.json())

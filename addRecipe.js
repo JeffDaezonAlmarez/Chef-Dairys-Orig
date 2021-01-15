@@ -16,9 +16,9 @@ const addRecipe = async () =>{
              ingredients: ingredients.value,
            
         })
-    }
+    } 
 
-    const response = await fetch("http://localhost:8080/api/recipe", options);
+    const response = await fetch("http://localhost:8080/api/add/recipe", options);
     const resData = await response.json();
     console.log(resData);
 }
