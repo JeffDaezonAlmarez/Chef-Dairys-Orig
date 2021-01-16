@@ -109,3 +109,13 @@ exports.getUserInfo = async (req, res) => {
     return res.status(400).json({ message: err.message, statusCode: 400 });
   }
 };
+exports.getUsers = async (req, res) => {
+  try {
+    const User = await Users.find();
+    return res
+      .status(200)
+      .json({ data: User, message: "Get Users", status: 200 });
+  } catch (err) {
+    return res.status(400).json({ message: err.message, status: 400 });
+  }
+};

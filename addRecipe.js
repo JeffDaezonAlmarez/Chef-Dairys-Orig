@@ -27,6 +27,6 @@ const sharedform = document.getElementById("sharedform");
 sharedform.addEventListener("submit",(event)=>{
     event.preventDefault();
     addRecipe();
-    //alert("Recipe Added.")
-    //window.location.replace('./login.html')//
+    alert("Recipe Added.")
+    window.location.replace('./sharedrecipe.html')
 })
