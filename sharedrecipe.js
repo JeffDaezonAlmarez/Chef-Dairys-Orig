@@ -21,47 +21,11 @@ fetch(api)
             const recipeList = document.createElement('h4')
             recipeList.classList.add('recipeList')
             recipeList.innerHTML = data.data[i].ingredients;
-            const btnBox = document.createElement('div')
-            btnBox.classList.add('btnBox')
-            const deleteBtn = document.createElement('button')
-            deleteBtn.classList.add('deleteBtn');
-            deleteBtn.innerHTML = 'Delete';
-
-            const api2 = "http://localhost:8080/api/recipe"
-            fetch (api2)
-            .then((resp) => resp.json())
-            .then((data) =>{
-                console.log(data);
-                for (let i = 0; i <data.data.length; i++) {
-                    deleteBtn.addEventListener( 'click', function deleteBtn(){
-                        alert("Are you sure?")
-                        delete(deleteBtn);
-                        // _id.value="";
-                        //  recipeName.value="";
-                        //  image.value="";
-                        //  ingredients.value="";
-                    
-                    });
-                }
-            })
-            
-           
-           
-            const updateBtn = document.createElement('button')
-            updateBtn.classList.add('updateBtn');
-            updateBtn.innerHTML = 'Update';
-            console.log();
         
             sharebox.appendChild(recipetitle);
             sharebox.appendChild(image);
             sharebox.appendChild(shareTitle)
             sharebox.appendChild(recipeList);
-            sharebox.appendChild(btnBox);
-            btnBox.appendChild(deleteBtn);
-            btnBox.appendChild(updateBtn);
             sharepick.appendChild(sharebox);
         }
     });
-    
-   
-   

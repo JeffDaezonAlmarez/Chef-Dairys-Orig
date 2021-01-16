@@ -15,7 +15,7 @@ exports.addUser = async (req, res) => {
       Email: Joi.string().min(8).required().email(),
       Password: Joi.string()
         .required()
-        .pattern(new RegExp('^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$')),
+        .pattern(new RegExp('^([A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$')),
     });
 
     const { error } = validationSchema.validate(req.body);
@@ -38,6 +38,7 @@ exports.addUser = async (req, res) => {
       return res.status(200).send(saveUser);
     }
   } catch (err) {
+    console.log(err);
     return res.status(400).send(err.message);
   }
 };
@@ -46,7 +47,7 @@ exports.userLogin = async (req, res) => {
   try {
     const validation = Joi.object({
       Email: Joi.string().required().min(2),
-      Password: Joi.string().required().min(8),
+      Password: Joi.string().required(),
     });
 
     // Request Validations
@@ -61,7 +62,7 @@ exports.userLogin = async (req, res) => {
     const user = await Users.findOne({ Email: req.body.Email });
     if (!user)
       return res.status(404).send({
-        message: `Email or Password is wrong`,
+        message: `User not found`,
         statusCode: 404,
       });
 
@@ -69,7 +70,7 @@ exports.userLogin = async (req, res) => {
     const validPass = await bcrypt.compare(req.body.Password, user.Password);
     if (!validPass)
       return res.status(403).send({
-        message: `Invalid Password`,
+        message: `Invalid email or password`,
         statusCode: 403,
       });
 

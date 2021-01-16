@@ -8,6 +8,7 @@ const createUser = async () => {
       'Content-Type': 'application/json',
       Accept: 'application/json',
       responseType: 'json',
+
     },
     body: JSON.stringify({
       Email: Email.value,
@@ -18,8 +19,8 @@ const createUser = async () => {
   const resData = await response.json();
   console.log(resData);
   if (response.status===200) {
-    window.location.replace('./home.html')
     alert(resData.message);
+    window.location.replace('./home.html')
   }
   else alert(resData.message)
 }
@@ -27,4 +28,4 @@ const registerForm = document.getElementById('loginform');
 registerForm.addEventListener('submit', (event) => {
   event.preventDefault();
   createUser();
-})
+});

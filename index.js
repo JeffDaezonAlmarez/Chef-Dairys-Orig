@@ -6,7 +6,6 @@ require('dotenv').config();
 
 // Routes
 const UserRoute = require('./routes/User.routes');
-const RecommendRoute = require('./routes/Recommend.routes');
 const RecipeRoute = require('./routes/Recipe.routes');
 
 const app = express();
@@ -21,7 +20,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes Middlewares
 app.use('/api', UserRoute);
-app.use('/api', RecommendRoute);
 app.use('/api', RecipeRoute);
 
 const options = {
